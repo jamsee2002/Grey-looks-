@@ -1,0 +1,284 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body { background:#1D232C;
+    font-family: "Poppins", serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+/*Side Navbar*/
+.side-navbar {
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+
+
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    color: white;
+}
+
+.header-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+
+.servives {
+    padding: 20px;
+}
+
+.servives-cintainer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servives-cintainer-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.servives-cintainer-2 div {
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+    
+}
+.newar h2{color: white;}
+.most h2{color: white;}
+
+.new-arrival button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 5px;
+    color: #1D232C;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    border-radius: 10px;
+    border: none;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.news input {
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+    border-radius: 30px;
+}
+
+.news button {
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 40px;
+    background-color:black;
+    color:white;
+}
+
+.product-section {
+    margin-top: 20px;
+
+}
+
+.product-search {
+    width: 80%;
+    border: solid white 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+.products p{
+    color: white;
+}
+
+.products-box img {
+    border-radius: 10px;
+}
+
+.contact-box {
+    padding: 20px;
+    background-color: hsl(216, 21%, 14%);
+    color: white;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+
+}
+
+.contact-box input {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    text-align: center;
+    flex-basis: 20%;
+    outline: none;
+    cursor: auto;
+
+
+}
+
+
+
+
+.contact-button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: blue;
+    color: white;
+
+}
+
+/*media Query*/
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .servives-cintainer-1 {
+        display: none;
+    }
+
+    .servives-cintainer-2 {
+        flex-direction: column;
+    }
+}
